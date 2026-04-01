@@ -104,7 +104,7 @@ for i in range(1, 100):
         total_sum += i
 print("even no:", total_sum)
 
-#use rin put takin the next code 
+#use pin put takin the next code 
 user_limit = int(input("Enter the maximum number to check: "))
 total_sum = 0
 for i in range(1, user_limit + 1): 
@@ -189,3 +189,35 @@ for i  in range (2,user_number):
     else:
         print("prime")
         break
+
+# - Unique Element Filter: Given a list with duplicate items, 
+# use a loop to create a new list containing only the unique elements 
+# (without using the set() constructor).
+
+user_list=[1,2,3,4,5,6,7,8,9,10]
+new_list=[]
+for i in user_list:
+    if i not in new_list:
+        new_list.append(i)
+        
+        break
+    else:
+        print("duplicate")
+        break
+print(new_list)
+
+# - Number Pyramid: Use nested loops to print a pyramid of numbers like this:
+#   1
+#   2 2
+#   3 3 3
+#   4 4 4 4
+
+user_list=[1,2,3,4,]
+new_list=[]
+for i in range(1,4):
+    for j in range(i):
+        print(i,end=" ")
+    print()
+
+
+
