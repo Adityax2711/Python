@@ -1,13 +1,10 @@
-# ============================================================
-#          PYTHON DICTIONARIES - CORE CONCEPTS
-# ============================================================
 
-# ----------------------------------------------------------
+#          PYTHON DICTIONARIES - CORE CONCEPTS
 # 1. WHAT IS A DICTIONARY?
 #    - Stores data as KEY: VALUE pairs
 #    - Keys must be UNIQUE and IMMUTABLE
 #    - Values can be ANYTHING
-# ----------------------------------------------------------
+
 
 # Creating a dictionary
 student = {
@@ -19,11 +16,10 @@ student = {
 print("Dictionary:", student)
 
 
-# ----------------------------------------------------------
 # 2. ACCESSING VALUES
 #    - Use the KEY inside square brackets []
 #    - Or use .get() which is safer (no crash if key missing)
-# ----------------------------------------------------------
+
 
 print("\n--- ACCESSING VALUES ---")
 print("Name:", student["name"])          # Direct access
@@ -31,11 +27,10 @@ print("Age:", student.get("age"))        # Using .get()
 print("Phone:", student.get("phone", "Not Found"))  # Default value if key missing
 
 
-# ----------------------------------------------------------
 # 3. ADDING AND UPDATING VALUES
 #    - Assign a new key to ADD
 #    - Assign to existing key to UPDATE
-# ----------------------------------------------------------
+
 
 print("\n--- ADDING & UPDATING ---")
 student["phone"] = "9999999999"     # ADD a new key
@@ -43,22 +38,20 @@ student["age"] = 21                 # UPDATE existing key
 print("Updated Dictionary:", student)
 
 
-# ----------------------------------------------------------
+
 # 4. REMOVING VALUES
 #    - del keyword: removes a specific key
 #    - .pop(): removes and RETURNS the value
 #    - .clear(): removes ALL items
-# ----------------------------------------------------------
+
 
 print("\n--- REMOVING VALUES ---")
 removed = student.pop("city")       # Removes "city" and returns its value
 print("Removed city:", removed)
 print("After pop:", student)
 
-
-# ----------------------------------------------------------
 # 5. USEFUL DICTIONARY METHODS
-# ----------------------------------------------------------
+
 
 print("\n--- USEFUL METHODS ---")
 
@@ -79,9 +72,8 @@ print("Is 'address' in student?", "address" in student)
 print("Total fields:", len(student))
 
 
-# ----------------------------------------------------------
 # 6. LOOPING THROUGH A DICTIONARY
-# ----------------------------------------------------------
+
 
 print("\n--- LOOPING ---")
 
@@ -94,10 +86,8 @@ for key, value in student.items():
     print(f"{key} --> {value}")
 
 
-# ----------------------------------------------------------
 # 7. NESTED DICTIONARY
 #    - A dictionary INSIDE a dictionary
-# ----------------------------------------------------------
 
 print("\n--- NESTED DICTIONARY ---")
 
@@ -115,11 +105,9 @@ print("Student2 Marks:", classroom["student2"]["marks"])
 for student_id, info in classroom.items():
     print(f"{student_id}: {info['name']} scored {info['marks']}")
 
-
-# ----------------------------------------------------------
 # 8. DICTIONARY COMPREHENSION
 #    - Create a dictionary in ONE line (like list comprehension)
-# ----------------------------------------------------------
+
 
 print("\n--- DICTIONARY COMPREHENSION ---")
 
@@ -131,10 +119,7 @@ print("Squares:", squares)
 even_squares = {num: num**2 for num in range(1, 11) if num % 2 == 0}
 print("Even Squares:", even_squares)
 
-
-# ----------------------------------------------------------
 # SUMMARY
-# ----------------------------------------------------------
 # dictionary = {key: value}        → Create
 # dict[key]                        → Access
 # dict[key] = value                → Add/Update
@@ -142,4 +127,3 @@ print("Even Squares:", even_squares)
 # key in dict                      → Check
 # dict.keys(), .values(), .items() → View
 # for k, v in dict.items()         → Loop
-# ============================================================
