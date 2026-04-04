@@ -239,19 +239,16 @@ for word,count in word.items():
 #    {"a": 1, "b": 2, "c": 3} → {1: "a", 2: "b", 3: "c"}
 #    We need to SWAP keys and values into a NEW dictionary
 
-dictionary = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
-print("\nOriginal:", dictionary)
-
-# ❌ YOUR OLD CODE: This only PRINTS, does NOT create a new dict
-# for key,value in dictionary.items():
-#     print(value, key)
-
-# ✅ METHOD 1: Using a for loop
-reversed_dict = {}                          # Start with empty dict
-for key, value in dictionary.items():       # Loop through each pair
-    reversed_dict[value] = key              # value becomes key, key becomes value
+dictionary = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5,"f":6,"g":7,"h":8,"i":9,"j":10,"k":11,"l":12,
+            "m":13,"n":14,"o":15,"p":16,"q":17,"r":18,"s":19,"t":20,"u":21,"v":22,"w":23,"x":24,"y":25,"z":26}
+print("Original:", dictionary)
+reversed_dict = {}                          
+for key, value in dictionary.items():       
+    reversed_dict[value] = key              
 print("Reversed (loop):", reversed_dict)
 
-# ✅ METHOD 2: Dictionary comprehension (1 line!)
-reversed_dict2 = {value: key for key, value in dictionary.items()}
-print("Reversed (comprehension):", reversed_dict2)
+#explain the code 
+#and the concept inn this write the dictionary cocnept for this allso this is the most important concept in the python 
+#also in this question we have to reverse the dictionary 
+#write the reversed  dict in the form of list 
+#use the loop statement write  the  print statement at last
