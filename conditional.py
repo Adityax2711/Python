@@ -139,3 +139,28 @@ else:
 
     #universal template for the conditional statements in the python 
 
+# ==========================================================
+# UNIVERSAL TEMPLATE FOR CONDITIONAL STATEMENTS
+# ==========================================================
+
+if condition_1:
+    # Code to execute if condition_1 is True
+    pass
+
+elif condition_2:
+    # Code to execute if condition_1 is False AND condition_2 is True
+    pass
+
+elif condition_3:
+    # Code to execute if condition_1 & condition_2 are False AND condition_3 is True
+    pass
+
+# ... you can have as many 'elif' blocks as you need ...
+
+else:
+    # Code to execute if ALL the above conditions are False
+    pass
+    
+# =======================
+
+

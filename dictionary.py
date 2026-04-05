@@ -1,13 +1,9 @@
-# ============================================================
-#          PYTHON DICTIONARIES - CORE CONCEPTS
-# ============================================================
 
-# ----------------------------------------------------------
 # 1. WHAT IS A DICTIONARY?
 #    - Stores data as KEY: VALUE pairs
 #    - Keys must be UNIQUE and IMMUTABLE
 #    - Values can be ANYTHING
-# ----------------------------------------------------------
+
 
 # Creating a dictionary
 student = {
@@ -19,7 +15,7 @@ student = {
 print("Dictionary:", student)
 
 
-# ----------------------------------------------------------
+
 # 2. ACCESSING VALUES
 #    - Use the KEY inside square brackets []
 #    - Or use .get() which is safer (no crash if key missing)
@@ -31,7 +27,6 @@ print("Age:", student.get("age"))        # Using .get()
 print("Phone:", student.get("phone", "Not Found"))  # Default value if key missing
 
 
-# ----------------------------------------------------------
 # 3. ADDING AND UPDATING VALUES
 #    - Assign a new key to ADD
 #    - Assign to existing key to UPDATE
@@ -77,9 +72,8 @@ print("Is 'address' in student?", "address" in student)
 print("Total fields:", len(student))
 
 
-# ----------------------------------------------------------
 # 6. LOOPING THROUGH A DICTIONARY
-# ----------------------------------------------------------
+
 
 print("\n--- LOOPING ---")
 
@@ -90,7 +84,6 @@ for key in student:
 # Loop through key-value pairs
 for key, value in student.items():
     print(f"{key} --> {value}")
-
 
 # ----------------------------------------------------------
 # 7. NESTED DICTIONARY
@@ -113,10 +106,9 @@ for student_id, info in classroom.items():
     print(f"{student_id}: {info['name']} scored {info['marks']}")
 
 
-# ----------------------------------------------------------
 # 8. DICTIONARY COMPREHENSION
 #    - Create a dictionary in ONE line (like list comprehension)
-# ----------------------------------------------------------
+
 
 print("\n--- DICTIONARY COMPREHENSION ---")
 
@@ -129,9 +121,7 @@ even_squares = {num: num**2 for num in range(1, 11) if num % 2 == 0}
 print("Even Squares:", even_squares)
 
 
-# ----------------------------------------------------------
-# SUMMARY
-# ----------------------------------------------------------
+
 # dictionary = {key: value}        → Create
 # dict[key]                        → Access
 # dict[key] = value                → Add/Update
@@ -139,4 +129,66 @@ print("Even Squares:", even_squares)
 # key in dict                      → Check
 # dict.keys(), .values(), .items() → View
 # for k, v in dict.items()         → Loop
-# ============================================================
+
+
+#Question
+
+# Easy: Dictionary Basics
+# - Create a dictionary representing a student with keys: name, age, grade, and city.
+# - Print the student's name and age.
+# - Add a new key "phone" with a value of your choice.
+# - Update the "grade" to a new value.
+# - Remove the "city" key.
+# - Loop through the dictionary and print all key-value pairs.
+# - Check if a specific key exists in the dictionary.
+# - Find the total number of key-value pairs.
+# - Use dictionary comprehension to create a dictionary of squares for numbers 1 to 5.
+# - Create a nested dictionary representing a classroom with multiple students and their marks.
+
+# Medium: Dictionary Operations
+# - Given two dictionaries, merge them into a single dictionary.
+# - Count the frequency of each character in a given string using a dictionary.
+# - Find the most common element in a list using a dictionary.
+# - Given a list of numbers, create a dictionary where keys are the numbers and values are their squares.
+# - Implement a simple inventory system using a dictionary (item: quantity).
+# - Check if two dictionaries are equal.
+# - Given a dictionary, create a new dictionary with keys and values swapped.
+# - Use dictionary comprehension to filter a dictionary based on some condition.
+# - Create a dictionary of employee records with nested dictionaries for personal and professional details.
+# - Implement a function to find the second largest value in a dictionary.
+
+# Hard: Advanced Dictionary Problems
+# - Implement a function to find the longest word in a dictionary of words.
+# - Given a list of dictionaries, group them by a specific key.
+# - Implement a function to find the intersection of two dictionaries (common keys with same values).
+# - Given a dictionary, create a new dictionary where keys are sorted alphabetically.
+# - Implement a function to find the most frequent key in a dictionary.
+# - Given a dictionary, create a new dictionary where values are the sum of all values in the original dictionary.
+# - Implement a function to find the longest substring without repeating characters using a dictionary.
+# - Given a dictionary, create a new dictionary where keys are the values and values are the keys.
+# - Implement a function to find the most frequent character in a string using a dictionary.
+# - Given a dictionary, create a new dictionary where keys are the values and values are the keys.
+
+#easy questions 
+# - Create a dictionary representing a student with keys: name, age, grade, and city.
+student={
+    "name":"Aditya",
+    "age":20,
+    "grade":"A",
+    "city":"Delhi"
+}
+print(student)
+
+print(student["name"])
+print(student["age"])
+
+student["phone"]="9999999999"
+print(student)
+
+student["grade"]="A+"
+print(student)
+
+del student["city"]
+print(student)
+
+

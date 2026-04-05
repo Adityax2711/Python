@@ -5,7 +5,6 @@
 # Vibe: It’s a flexible container. Need to keep track of users logging into a chatroom? Use a list. People leave and join all the ti
 # When to use Lists:
 # Dynamic Data: When you don’t know how many items you’ll have (e.g., results from a database query).
-# 
 # Sorting/Ordering: If you need to frequently sort, reverse, or shuffle your data.
 # 
 # Homogeneous Data: Usually, we use lists for a collection of the same types of things (e.g., a list of Price objects).
