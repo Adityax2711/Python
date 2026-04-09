@@ -125,6 +125,7 @@ print(squares)
 evens = {x for x in range(1, 11) if x % 2 == 0}
 print(evens)
 
+
 # Create a set from a string (unique characters)
 word = "programming"
 unique_chars = {char for char in word}
@@ -178,3 +179,20 @@ print(my_set)  # Output order may vary!
 #Membership	Fast (O(1))
 #Operations	Union, Intersection, Difference, etc.
 #Frozen Set	Immutable version, can be used as dictionary keys
+
+
+#with the help of loop  statement in the st we can do following things :
+
+my_set={1,2,3,4,5}
+for x in my_set:
+    print(x)
+
+
+my_set={1,2,3,4,5}
+if 3 in my_set:
+    print("3 is in the set")
+
+
+
+#with the help of if-else statement in the st we can do following things :
+

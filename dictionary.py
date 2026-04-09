@@ -191,4 +191,30 @@ print(student)
 del student["city"]
 print(student)
 
+## - Loop through the dictionary and print all key-value pairs.
+for i in student:
+    print(i)
+
+# - Check if a specific key exists in the dictionary.
+print("name" in student)
+
+# - Find the total number of key-value pairs.
+print(len(student))
+
+# - Use dictionary comprehension to create a dictionary of squares for numbers 1 to 5.
+squares = {num: num**2 for num in range(1, 6)}
+print(squares)
+
+# - Create a nested dictionary representing a classroom with multiple students and their marks.
+classroom = {
+    "student1": {"name": "Aditya", "marks": 95},
+    "student2": {"name": "Rahul", "marks": 88},
+    "student3": {"name": "Priya", "marks": 92},
+}
+print(classroom)    
+
+#medium questions 
+
+# - Given two dictionaries, merge them into a single dictionary.
+
 
