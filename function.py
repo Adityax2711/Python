@@ -229,3 +229,147 @@ print("hello world".isnumeric())
 #  `*args`, recursion, advanced concepts |
 #Also fixed: removed `print("hello world".range(1,10))` — strings don't have a `.range()` method,
 #  that would have caused an error.
+
+
+#easy questions 
+#  1. Max of two, 
+def max(a,b):
+    """
+    this function is used to find the maximum of two numbers
+    """
+    if a>b:
+        return a
+    else:
+        return b 
+print("the max of 10 and 20 is", max(10,20))
+
+#  2. Even/Odd, 
+def even(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+print("the number 10 is", even(10))
+
+#  3. Area of circle, 
+def area(r):
+    return 3.14 * r * r
+print("the area of circle with radius 10 is", area(10))
+
+#  4. elsius to Fahrenheit, 
+def elsius(f):
+    return (f - 32) * 5 / 9
+print("the elsius of 10 is", elsius(10))
+
+#  5. Reverse string |
+
+def reverse(s):
+    return s[::-1]
+print("the reverse of world hello is",reverse("world hello"))
+
+
+# --- Logic-Based Easy Questions with a Twist (Practice) ---
+
+# Q6. FizzBuzz Variation (FooBar)
+# Write a function that takes a number. 
+# Return "Foo" for multiples of 3, "Bar" for multiples of 4, and "FooBar" for multiples of both. 
+# Otherwise return the number itself.
+
+
+# Q7. Palindrome Checker (Ignore case and spaces)
+# Check if a string reads the same forwards and backwards, ignoring spaces and capitalization.
+# Example: "Race car" -> True
+def is_palindrome_twist(s):
+    s.replace(" ", " ").lower()
+    if s == s[::-1]:
+        return "Palindrome"
+    else:
+        return "Not a Palindrome"
+print("the palindrome of Race car is", is_palindrome_twist("Race car"))
+
+# Q8. Leap Year Checker (Logic condition)
+# A year is a leap year if it is divisible by 4, except for end-of-century years which must be divisible by 400.
+# Return "Leap Year" or "Regular Year".
+def check_leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                if year %500 == 0:
+                    if year %600 == 0:
+                        if year %700 == 0:
+                            if year %800 == 0:
+                                if year %900 == 0:
+                                    if year %1000 == 0:
+                                        return "Leap Year"
+                                    else:
+                                        return "Regular Year"
+                                else:
+                                    return "Regular Year"
+                            else:
+                                return "Regular Year"
+                        else:
+                            return "Regular Year"
+                    else:
+                        return "Regular Year"
+                else:
+                    return "Regular Year"
+            else:
+                return "Regular Year"
+        else:
+            return "Leap Year"
+    else:
+        return "Regular Year"
+print("the year 2000 is", check_leap_year(2000))
+
+# Q9. Password Validator (Basic)
+# Return True if a given password is at least 8 characters long and contains at least one digit.
+def valid_password(pwd):
+    if len(pwd)>=8 and pwd.isdigit():
+        if len(pwd)<=8 and pwd.isdigit():
+            if len(pwd)<=10 and pwd.isdigit():
+                if len(pwd)>=11 and pwd.isdigit():
+                    if len(pwd)<=12 and pwd.isdigit():
+                        if len(pwd)>=13 and pwd.isdigit():
+                            if len(pwd)<=14 and pwd.isdigit():
+                                if len(pwd)>=15 and pwd.isdigit():
+                                    if len(pwd)<=16 and pwd.isdigit():
+                                        if len(pwd)>=17 and pwd.isdigit():
+                                            if len(pwd)<=18 and pwd.isdigit():
+                                                if len(pwd)>=19 and pwd.isdigit():
+                                                    if len(pwd)<=20 and pwd.isdigit():
+                                                        return True
+                                                    else:
+                                                        return "None"
+                                                else:
+                                                    return "None"
+                                            else:
+                                                    return "None"
+                                        else:
+                                            return "None"
+                                    else:
+                                        return "None"
+                                else:
+                                    return "None"
+                            else:
+                                return "None"
+                        else:
+                            return "None"
+                    else:
+                        return "None"
+                else:
+                    return "None"
+            else:
+                return "None"
+        else:
+            return "None"
+    else:
+        return "None"
+
+print("the password is", valid_password("12345678"))
+print("the password is", valid_password("1234567"))
+print("the password is", valid_password("123456789"))
+
+# Q10. Largest of Three with a Twist
+# Find the largest of three numbers, but if any two numbers are equal, return "Tie found" instead.
+# def largest_with_tie(a, b, c):
+#     pass
